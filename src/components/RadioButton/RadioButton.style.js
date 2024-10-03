@@ -12,6 +12,7 @@ export const Wrapper = styled.label`
   border-radius: 8px;
 
   &:has(> input:checked),
+  &:has(> input:focus),
   &:hover {
     border: 1px solid ${COLORS["orange"]};
   }
