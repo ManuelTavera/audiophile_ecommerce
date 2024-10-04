@@ -10,6 +10,8 @@
     "new-component": "npm exec new-component"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-visually-hidden": "^1.1.0",
     "new-component": "^5.0.2",
     "next": "14.2.13",
     "react": "^18",

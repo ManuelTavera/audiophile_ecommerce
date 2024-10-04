@@ -13,4 +13,6 @@ const Typography = React.forwardRef(function (
   );
 });
 
+Typography.displayName = "Typography";
+
 export default Typography;
