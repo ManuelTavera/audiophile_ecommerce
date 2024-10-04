@@ -2,6 +2,7 @@ import { Manrope } from "next/font/google";
 import "./styles.css";
 
 import StyledComponentsRegistry from "@/components/StyledComponentsRegistry";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: "Audiophile ecommerce",
@@ -17,7 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={manrope.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
