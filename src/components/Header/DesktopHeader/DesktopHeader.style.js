@@ -17,7 +17,6 @@ export const Wrapper = styled(MainWrapper)`
   }
 `;
 
-
 export const Navigation = styled.nav``;
 
 export const LinksWrapper = styled.ul`
@@ -27,11 +26,15 @@ export const LinksWrapper = styled.ul`
   gap: 34px;
 `;
 
-export const LinksItem = styled.li``;
-
 export const LinkText = styled(Typography)`
   --color: ${COLORS["white"]};
   --letterSpacing: ${2 / 16}rem;
 
   text-decoration: none;
+`;
+
+export const LinksItem = styled.li`
+  &:hover ${LinkText} {
+    --color: ${COLORS["orange"]};
+  }
 `;

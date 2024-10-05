@@ -15,10 +15,8 @@ export const Wrapper = styled.div`
   border-radius: 8px;
   text-decoration: none;
 
-  &:hover {
-    button {
-      --color: ${COLORS["lightOrange"]};
-    }
+  &:hover ${ShopButton} {
+    --color: ${COLORS["lightOrange"]};
   }
 `;
 
