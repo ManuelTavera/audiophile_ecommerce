@@ -20,7 +20,7 @@ const hoverStyles = (props) => {
   let styles = ``;
   if (props === "contained") {
     styles = `
-        --backgroundColor: color-mix(in hsl, ${COLORS["orange"]}, transparent 20%)
+        --backgroundColor: ${COLORS["lightOrange"]}
     `;
   }
 
@@ -62,4 +62,4 @@ export const Wrapper = styled.button`
   }
 `;
 
-export const Icon = styled.img``
+export const Icon = styled.img``;
