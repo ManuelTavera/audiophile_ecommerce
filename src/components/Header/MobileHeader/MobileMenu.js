@@ -4,7 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { COLORS, MEDIA_QUERIES } from "@/constant";
 import ProductButton from "@/components/ProductButton";
-import { NAVIGATION_LINKS } from "../Header.constant";
+import { NAVIGATION_LINKS_WITHOUT_HOME } from "@/constant";
 
 const Wrapper = styled(Dialog.Root)``;
 const Trigger = styled(Dialog.Trigger)``;
@@ -52,10 +52,6 @@ const Content = styled(Dialog.Content)`
 const NavigationItem = styled.div`
   flex-basis: 33%;
 `;
-
-const NAVIGATION_LINKS_WITHOUT_HOME = NAVIGATION_LINKS.filter(
-  ({ name }) => name !== "HOME"
-);
 
 function MobileMenu({ children }) {
   return (

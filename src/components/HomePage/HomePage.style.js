@@ -4,13 +4,13 @@ import MainWrapper from "@/components/MainWrapper";
 import Typography from "../Typography";
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.main`
+  background-color: ${COLORS["white"]};
+`;
+
+export const HeroSection = styled.section`
   position: relative;
   background-color: ${COLORS["darkLight"]};
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
   height: 729px;
 
   ${MEDIA_QUERIES["mobile"]} {
@@ -18,19 +18,40 @@ export const Wrapper = styled.section`
   }
 `;
 
-export const SubWrapper = styled(MainWrapper)`
-  height: 100%;
+export const HeroWrapper = styled(MainWrapper)`
   display: flex;
   align-items: center;
+  height: 100%;
 
   ${MEDIA_QUERIES["tablet"]} {
     justify-content: center;
   }
+`;
+
+export const ProductSection = styled.section``;
+
+export const NavigationWrapper = styled(MainWrapper)`
+  display: flex;
+  gap: 30px;
+  margin-top: 150px;
+  margin-bottom: 160px;
 
   ${MEDIA_QUERIES["tablet"]} {
-    padding-left: 10px;
-    padding-right: 10px;
+    gap: 10px;
+    margin-bottom: 96px;
+    margin-top: 126px;
   }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    gap: 46px;
+  }
+`;
+
+export const NavigationItem = styled.div`
+  flex-basis: 33%;
 `;
 
 export const ProductTitle = styled(Typography)`

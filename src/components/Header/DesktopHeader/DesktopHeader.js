@@ -11,7 +11,7 @@ import {
 
 import { LogoWrapper, Logo, IconWrapper, Icon, Line } from "../Header.style";
 
-import { NAVIGATION_LINKS } from "../Header.constant";
+import { NAVIGATION_LINKS } from "@/constant";
 
 function DesktopHeader() {
   return (

@@ -9,7 +9,8 @@ export const Wrapper = styled(MainWrapper)`
   ${MEDIA_QUERIES["tablet"]} {
     display: flex;
     align-items: center;
-    padding: 32px 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     gap: 42px;
     position: relative;
   }

@@ -3,7 +3,7 @@ import { MEDIA_QUERIES } from "@/constant";
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
-  background: transparent;
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;

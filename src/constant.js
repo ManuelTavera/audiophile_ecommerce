@@ -20,3 +20,34 @@ export const MEDIA_QUERIES = {
   tablet: `@media screen and (max-width: ${BREAKPOINTS["tablet"]}px)`,
   mobile: `@media screen and (max-width: ${BREAKPOINTS["mobile"]}px)`,
 };
+
+export const NAVIGATION_LINKS = [
+  {
+    name: "HOME",
+    href: "/",
+    image: "",
+    alt: "",
+  },
+  {
+    name: "HEADPHONES",
+    href: "/headphones",
+    image: "/images/image-category-thumbnail-headphones.png",
+    alt: "Headphones",
+  },
+  {
+    name: "SPEAKERS",
+    href: "/speakers",
+    image: "/images/image-category-thumbnail-speakers.png",
+    alt: "Speakers",
+  },
+  {
+    name: "EARPHONES",
+    href: "/earphones",
+    image: "/images/image-category-thumbnail-earphones.png",
+    alt: "Earphones",
+  },
+];
+
+export const NAVIGATION_LINKS_WITHOUT_HOME = NAVIGATION_LINKS.filter(
+  ({ name }) => name !== "HOME"
+);
