@@ -1,7 +1,8 @@
 "use client";
 import { COLORS, MEDIA_QUERIES } from "@/constant";
 import MainWrapper from "@/components/MainWrapper";
-import Typography from "../Typography";
+import Typography from "@/components/Typography";
+import Button from "@/components/Button";
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
@@ -98,16 +99,149 @@ export const BackgroundImage = styled.figure`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/images/image-hero.jpg");
+  background-image: url("/images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 
   ${MEDIA_QUERIES["tablet"]} {
-    background-image: url("/images/image-header.jpg");
+    background-image: url("/images/tablet/image-header.jpg");
   }
 
   ${MEDIA_QUERIES["mobile"]} {
-    background-image: url("/images/image-header-mobile.jpg");
+    background-image: url("/images/mobile/image-header.jpg");
+  }
+`;
+
+export const ZX9SpeakerWrapper = styled(MainWrapper)`
+  height: 560px;
+  margin-bottom: 46px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    margin-bottom: 24px;
+  }
+`;
+
+export const ZX9SpeakerSubWrapper = styled.div`
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: ${COLORS["orange"]};
+  border-radius: 8px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 52px;
+    padding-bottom: 64px;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+`;
+
+export const ZX9SpeakerImage = styled.img`
+  max-height: 490px;
+  position: absolute;
+  top: unset;
+  bottom: -5%;
+  left: 10%;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    position: relative;
+    max-width: 235px;
+    margin-bottom: 64px;
+    inset: unset;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    max-width: 207px;
+    margin-bottom: 32px;
+  }
+`;
+
+export const CirclePattern = styled.img`
+  position: absolute;
+  left: -10%;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    left: 50%;
+    max-width: none;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 64px;
+    pointer-events: none;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    max-width: 558px;
+    bottom: auto;
+    top: -15%;
+  }
+`;
+
+export const ZX9SpeakerInformation = styled.div`
+  max-width: 350px;
+  margin-right: 95px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+`;
+
+export const ZX9SpeakerTitle = styled(Typography)`
+  --color: ${COLORS["white"]};
+  margin-bottom: 24px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    text-align: center;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+    width: min-content;
+  }
+`;
+
+export const ZX9SpeakerBody = styled(Typography)`
+  --color: color-mix(in hsl, ${COLORS["white"]} 75%, transparent);
+  margin-bottom: 40px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    text-align: center;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    margin-bottom: 24px;
+  }
+`;
+
+export const ZX9SpeakerBtn = styled(Button)`
+  --backgroundColor: ${COLORS["black"]};
+
+  &:hover {
+    --backgroundColor: ${COLORS["graySecondary"]};
   }
 `;

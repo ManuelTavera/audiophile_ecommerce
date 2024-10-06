@@ -43,6 +43,9 @@ const hoverStyles = (props) => {
 
 export const Wrapper = styled.button`
   ${(props) => VARIANTS[props.$variant]}
+  &:hover {
+    ${(props) => hoverStyles(props.$variant)}
+  }
   min-width: 160px;
   min-height: 48px;
   font-size: ${13 / 16}rem;
@@ -56,10 +59,6 @@ export const Wrapper = styled.button`
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-
-  &:hover {
-    ${(props) => hoverStyles(props.$variant)}
-  }
 `;
 
 export const Icon = styled.img``;

@@ -7,9 +7,7 @@ import MobileHeader from "./MobileHeader";
 import { BREAKPOINTS } from "@/constant";
 
 function Header() {
-  const [isMobile, setIsMobile] = React.useState(() => {
-    return window.innerWidth <= BREAKPOINTS.tablet;
-  });
+  const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
     function handleResize() {
