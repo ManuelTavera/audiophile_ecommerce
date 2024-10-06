@@ -173,6 +173,7 @@ export const ZX9SpeakerImage = styled.img`
 
 export const CirclePattern = styled.img`
   position: absolute;
+  pointer-events: none;
   left: -10%;
 
   ${MEDIA_QUERIES["tablet"]} {
@@ -181,7 +182,6 @@ export const CirclePattern = styled.img`
     transform: translateX(-50%);
     top: auto;
     bottom: 64px;
-    pointer-events: none;
   }
 
   ${MEDIA_QUERIES["mobile"]} {
