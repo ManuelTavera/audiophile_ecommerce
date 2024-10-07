@@ -7,6 +7,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.main`
   background-color: ${COLORS["white"]};
+  margin-bottom: 200px;
 `;
 
 export const HeroSection = styled.section`
@@ -28,8 +29,6 @@ export const HeroWrapper = styled(MainWrapper)`
     justify-content: center;
   }
 `;
-
-export const ProductSection = styled.section``;
 
 export const NavigationWrapper = styled(MainWrapper)`
   display: flex;
@@ -174,7 +173,8 @@ export const ZX9SpeakerImage = styled.img`
 export const CirclePattern = styled.img`
   position: absolute;
   pointer-events: none;
-  left: -10%;
+  left: -13%;
+  top: -7%;
 
   ${MEDIA_QUERIES["tablet"]} {
     left: 50%;
@@ -244,4 +244,110 @@ export const ZX9SpeakerBtn = styled(Button)`
   &:hover {
     --backgroundColor: ${COLORS["graySecondary"]};
   }
+`;
+
+export const ZX7SpeakerWrapper = styled(MainWrapper)`
+  height: 320px;
+  margin-bottom: 48px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    margin-bottom: 32px;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    margin-bottom: 24px;
+  }
+`;
+
+export const ZX7SpeakerSubWrapper = styled.div`
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("/images/desktop/image-speaker-zx7.png");
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    background-image: url("/images/tablet/image-speaker-zx7.png");
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    background-image: url("/images/mobile/image-speaker-zx7.png");
+  }
+`;
+
+export const ZX7SpeakerInformation = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  margin-left: 95px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    margin-left: 62px;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    margin-left: 24px;
+  }
+`;
+
+export const YX1EarphonesWrapper = styled(MainWrapper)`
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    gap: 11px;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    gap: 24px;
+    flex-direction: column;
+  }
+`;
+
+export const YX1EarhphoneSubWrapper = styled.div`
+  max-height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+
+  ${MEDIA_QUERIES["mobile"]} {
+    min-height: 200px;
+  }
+`;
+
+export const YX1EarhphoneImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+`;
+
+export const YX1EarphoneInformation = styled.div`
+  background-color: ${COLORS["darkGray"]};
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 95px;
+  gap: 32px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    min-height: inherit;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+`;
+
+export const YX1Picture = styled.picture`
+  height: 100%;
 `;

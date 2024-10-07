@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import {
@@ -9,7 +10,6 @@ import {
   Headline,
   Copy,
   HeroWrapper,
-  ProductSection,
   NavigationWrapper,
   NavigationItem,
   ZX9SpeakerWrapper,
@@ -20,10 +20,19 @@ import {
   ZX9SpeakerBtn,
   CirclePattern,
   ZX9SpeakerSubWrapper,
+  ZX7SpeakerWrapper,
+  ZX7SpeakerSubWrapper,
+  ZX7SpeakerInformation,
+  YX1EarphonesWrapper,
+  YX1EarphoneInformation,
+  YX1EarhphoneImage,
+  YX1EarhphoneSubWrapper,
+  YX1Picture,
 } from "./HomePage.style";
 import ProductButton from "../ProductButton";
 import { NAVIGATION_LINKS_WITHOUT_HOME, BREAKPOINTS } from "@/constant";
 import Button from "../Button";
+import Typography from "../Typography";
 
 function HomePage() {
   return (
@@ -45,7 +54,7 @@ function HomePage() {
           </Information>
         </HeroWrapper>
       </HeroSection>
-      <ProductSection>
+      <section>
         <NavigationWrapper>
           {NAVIGATION_LINKS_WITHOUT_HOME.map(({ name, image, alt, href }) => (
             <NavigationItem key={name}>
@@ -83,7 +92,39 @@ function HomePage() {
             </ZX9SpeakerInformation>
           </ZX9SpeakerSubWrapper>
         </ZX9SpeakerWrapper>
-      </ProductSection>
+        <ZX7SpeakerWrapper>
+          <ZX7SpeakerSubWrapper>
+            <ZX7SpeakerInformation>
+              <Typography as="h4">ZX7 SPEAKER</Typography>
+              <Button variant="outlined">SEE PRODUCT</Button>
+            </ZX7SpeakerInformation>
+          </ZX7SpeakerSubWrapper>
+        </ZX7SpeakerWrapper>
+        <YX1EarphonesWrapper>
+          <YX1EarhphoneSubWrapper>
+            <YX1Picture>
+              <source
+                media={`(max-width: ${BREAKPOINTS["mobile"]}px)`}
+                srcSet="/images/mobile/image-earphones-yx1.jpg"
+              />
+              <source
+                media={`(max-width: ${BREAKPOINTS["tablet"]}px)`}
+                srcSet="/images/tablet/image-earphones-yx1.jpg"
+              />
+              <YX1EarhphoneImage
+                src="/images/desktop/image-earphones-yx1.jpg"
+                alt="Earphones"
+              />
+            </YX1Picture>
+          </YX1EarhphoneSubWrapper>
+          <YX1EarhphoneSubWrapper>
+            <YX1EarphoneInformation>
+              <Typography as="h4">YX1 EARPHONES</Typography>
+              <Button variant="outlined">SEE PRODUCT</Button>
+            </YX1EarphoneInformation>
+          </YX1EarhphoneSubWrapper>
+        </YX1EarphonesWrapper>
+      </section>
     </Wrapper>
   );
 }

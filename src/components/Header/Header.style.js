@@ -1,5 +1,5 @@
 "use client";
-import { MEDIA_QUERIES } from "@/constant";
+import { COLORS, MEDIA_QUERIES } from "@/constant";
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
@@ -11,6 +11,7 @@ export const Wrapper = styled.header`
   z-index: 1;
   isolation: isolate;
   width: 100%;
+  background-color: ${COLORS["darkLight"]};
 `;
 
 export const Line = styled.hr`
@@ -24,6 +25,10 @@ export const Line = styled.hr`
   ${MEDIA_QUERIES["tablet"]} {
     width: calc(100% - 80px);
     background-color: color-mix(in hsl, hsl(0, 0%, 100%) 10.4%, transparent);
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    width: calc(100% - 48px);
   }
 `;
 
