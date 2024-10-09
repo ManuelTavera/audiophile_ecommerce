@@ -3,6 +3,7 @@ import "./styles.css";
 
 import StyledComponentsRegistry from "@/components/StyledComponentsRegistry";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Audiophile ecommerce",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <StyledComponentsRegistry>
           <Header />
           {children}
+          <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>

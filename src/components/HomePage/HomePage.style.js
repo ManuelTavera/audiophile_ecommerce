@@ -8,6 +8,14 @@ import styled from "styled-components";
 export const Wrapper = styled.main`
   background-color: ${COLORS["white"]};
   margin-bottom: 200px;
+
+  ${MEDIA_QUERIES["tablet"]} {
+    margin-bottom: 96px;
+  }
+
+  ${MEDIA_QUERIES["mobile"]} {
+    margin-bottom: 120px;
+  }
 `;
 
 export const HeroSection = styled.section`
