@@ -23,7 +23,7 @@ import {
   FooterCopyrightText,
   FooterAboutRow,
   FooterRowSpecial,
-  Line
+  Line,
 } from "./Footer.style";
 import { BREAKPOINTS, NAVIGATION_LINKS } from "@/constant";
 import FacebookIcon from "@/public/icon/icon-facebook.svg";
@@ -38,7 +38,7 @@ const SOCIAL_LINKS = [
 
 function Footer() {
   return (
-    <>
+    <footer>
       <AboutWrapper as="section">
         <AboutInformation>
           <AboutTitle forwardedAs={"h2"}>
@@ -121,7 +121,7 @@ function Footer() {
           </FooterRowSpecial>
         </FooterWrapper>
       </FooterSection>
-    </>
+    </footer>
   );
 }
 

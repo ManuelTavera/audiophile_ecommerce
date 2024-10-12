@@ -1,5 +1,5 @@
 "use client";
-import { COLORS, MEDIA_QUERIES } from "@/constant";
+import { MEDIA_QUERIES } from "@/constant";
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
@@ -11,7 +11,7 @@ export const Wrapper = styled.header`
   z-index: 1;
   isolation: isolate;
   width: 100%;
-  background-color: ${COLORS["darkLight"]};
+  background-color: var(--backgroundColor);
 `;
 
 export const Line = styled.hr`

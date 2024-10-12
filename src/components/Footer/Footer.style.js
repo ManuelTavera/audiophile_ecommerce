@@ -12,6 +12,7 @@ export const AboutWrapper = styled(MainWrapper)`
   ${MEDIA_QUERIES["tablet"]} {
     flex-direction: column-reverse;
     gap: 63px;
+    margin-bottom: 120px;
   }
 
   ${MEDIA_QUERIES["mobile"]} {
@@ -71,7 +72,7 @@ export const ImageWrapper = styled.div`
   border-radius: 8px;
 `;
 
-export const FooterSection = styled.footer`
+export const FooterSection = styled.section`
   background-color: ${COLORS["black"]};
 `;
 

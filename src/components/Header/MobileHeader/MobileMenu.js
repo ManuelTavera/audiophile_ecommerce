@@ -33,7 +33,7 @@ const Content = styled(Dialog.Content)`
   width: 100%;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  padding-top: 55px;
+  padding-top: 90px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 67px;
@@ -44,7 +44,7 @@ const Content = styled(Dialog.Content)`
 
   ${MEDIA_QUERIES["mobile"]} {
     flex-direction: column;
-    padding: 62px 24px 35px;
+    padding: 85px 24px 35px;
     gap: 46px;
   }
 `;
