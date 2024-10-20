@@ -6,13 +6,10 @@ import {
   Title,
   HeroWrapper,
   ProductSectionWrapper,
-  NavigationWrapper,
-  NavigationItem
 } from "./HeadphonesPage.style";
 
 import ProductInformation from "./ProductInformation/ProductInformation";
-import { NAVIGATION_LINKS_WITHOUT_HOME } from "@/constant";
-import ProductButton from "../ProductButton";
+
 
 function HeadphonesPage() {
   return (
@@ -68,15 +65,6 @@ function HeadphonesPage() {
               brilliant companion at home or on the move.`}
           />
         </ProductSectionWrapper>
-      </section>
-      <section>
-        <NavigationWrapper>
-          {NAVIGATION_LINKS_WITHOUT_HOME.map(({ name, image, alt, href }) => (
-            <NavigationItem key={name}>
-              <ProductButton name={name} image={image} alt={alt} href={href} />
-            </NavigationItem>
-          ))}
-        </NavigationWrapper>
       </section>
     </Wrapper>
   );
