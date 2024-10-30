@@ -15,8 +15,12 @@ function Header() {
   const backgroundColor =
     pathName === "/" ? COLORS["darkLight"] : COLORS["black"];
 
+  const position = pathName.includes("/details") ? "sticky" : "fixed";
+
   return (
-    <Wrapper style={{ "--backgroundColor": backgroundColor }}>
+    <Wrapper
+      style={{ "--backgroundColor": backgroundColor, "--position": position }}
+    >
       {isMobile && <MobileHeader />}
       {!isMobile && <DesktopHeader />}
     </Wrapper>

@@ -29,4 +29,9 @@ export const ControlButton = styled.button`
   &:hover {
     color: ${COLORS["orange"]};
   }
+
+  &:disabled {
+    color: ${COLORS["gray"]};
+    cursor: auto;
+  }
 `;

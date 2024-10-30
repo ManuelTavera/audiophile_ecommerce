@@ -7,11 +7,12 @@ export const Wrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: var(--position);
   z-index: 1;
   isolation: isolate;
   width: 100%;
   background-color: var(--backgroundColor);
+  top: 0;
 `;
 
 export const Line = styled.hr`
