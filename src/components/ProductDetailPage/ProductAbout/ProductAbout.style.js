@@ -7,6 +7,7 @@ import styled from "styled-components";
 export const Wrapper = styled(MainWrapper)`
   display: flex;
   gap: 125px;
+  margin-bottom: 160px;
 
   ${MEDIA_QUERIES["tablet"]} {
     gap: 69px;

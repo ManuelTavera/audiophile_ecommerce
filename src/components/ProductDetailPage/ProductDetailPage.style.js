@@ -25,4 +25,8 @@ export const SubWrapper = styled(MainWrapper)`
 export const BackText = styled(Typography)`
   --color: color-mix(in hsl, ${COLORS["black"]}, transparent);
   text-decoration: none;
+
+  &:hover {
+    --color: ${COLORS["orange"]};
+  }
 `;

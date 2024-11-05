@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Wrapper, BackText, SubWrapper } from "./ProductDetailPage.style";
 import ProductAbout from "./ProductAbout/ProductAbout";
+import ProductFeature from "./ProductFeature/ProductFeature";
 
 function ProductDetailPage() {
   return (
@@ -15,6 +16,7 @@ function ProductDetailPage() {
         </Link>
       </SubWrapper>
       <ProductAbout />
+      <ProductFeature />
     </Wrapper>
   );
 }
