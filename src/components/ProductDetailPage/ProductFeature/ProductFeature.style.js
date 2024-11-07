@@ -37,11 +37,11 @@ export const ItemsWrapper = styled.div`
 
   ${MEDIA_QUERIES["tablet"]} {
     display: flex;
+    flex: 1;
   }
 
   ${MEDIA_QUERIES["mobile"]} {
     flex-direction: column;
-    flex: 1;
   }
 `;
 
