@@ -5,6 +5,7 @@ import { Wrapper, BackText, SubWrapper } from "./ProductDetailPage.style";
 import ProductAbout from "./ProductAbout/ProductAbout";
 import ProductFeature from "./ProductFeature/ProductFeature";
 import ProductGallery from "./ProductGallery/ProductGallery";
+import ProductRecommended from "./ProductRecommended/ProductRecommended";
 
 function ProductDetailPage() {
   return (
@@ -19,6 +20,7 @@ function ProductDetailPage() {
       <ProductAbout />
       <ProductFeature />
       <ProductGallery />
+      <ProductRecommended />
     </Wrapper>
   );
 }

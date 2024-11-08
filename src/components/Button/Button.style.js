@@ -44,7 +44,8 @@ const hoverStyles = (props) => {
 export const Wrapper = styled.button`
   ${(props) => VARIANTS[props.$variant]}
   &:hover {
-    ${(props) => hoverStyles(props.$variant)}
+    cursor: pointer;
+    ${(props) => hoverStyles(props.$variant)};
   }
   min-width: 160px;
   min-height: 48px;
