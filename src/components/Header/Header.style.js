@@ -8,11 +8,12 @@ export const Wrapper = styled.header`
   justify-content: center;
   align-items: center;
   position: var(--position);
+  background-color: var(--backgroundColor);
   z-index: 1;
   isolation: isolate;
   width: 100%;
-  background-color: var(--backgroundColor);
   top: 0;
+  transition: background-color 0.5s ease-in-out;
 `;
 
 export const Line = styled.hr`
