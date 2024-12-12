@@ -147,10 +147,11 @@ export const ALL_PRODUCTS = {
     ],
   },
   "xx99-mark-i-headphones": {
-    name: "XX99 Mark II Headphones",
-    description: `The new XX99 Mark II headphones is the pinnacle of pristine audio. 
-      It redefines your premium headphone experience by reproducing 
-      the balanced depth and precision of studio-quality sound.`,
+    name: "XX99 Mark I Headphones",
+    description: `As the gold standard for headphones, 
+    the classic XX99 Mark I offers detailed and accurate audio 
+    reproduction for audiophiles, mixing engineers, and music aficionados 
+    alike in studios and on the go.`,
     price: 1750,
     isNewProduct: false,
     images: [
