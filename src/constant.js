@@ -150,6 +150,6 @@ export const ALL_PRODUCTS = {
 
 export const DETAILS_SLUGS = [
   "xx99-mark-ii-headphones",
-  "xx99-mark-i-headphones",
-  "xx59-headphones",
+  //"xx99-mark-i-headphones",
+  //"xx59-headphones",
 ];

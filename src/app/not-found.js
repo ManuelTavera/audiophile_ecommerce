@@ -15,6 +15,10 @@ const Title = styled.h1`
 `;
 
 export default function NotFound() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Wrapper>
       <Title>404</Title>

@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import Typography from "@/components/Typography";
 import { COLORS, MEDIA_QUERIES } from "@/constant";
+import Button from "@/components/Button";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -75,7 +76,7 @@ export const Paragraph = styled(Typography)`
 
 export const Subheader = styled(Typography)`
   margin-bottom: 16px;
-  
+
   ${MEDIA_QUERIES["mobile"]} {
     margin-bottom: 24px;
   }
@@ -90,4 +91,8 @@ export const Image = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
+`;
+
+export const ProductButton = styled(Button)`
+  text-decoration: none;
 `;

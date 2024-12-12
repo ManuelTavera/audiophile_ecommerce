@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 import {
   Wrapper,
@@ -28,10 +29,10 @@ import {
   YX1EarhphoneImage,
   YX1EarhphoneSubWrapper,
   YX1Picture,
+  Button,
 } from "./HomePage.style";
 import ProductButton from "../ProductButton";
 import { NAVIGATION_LINKS_WITHOUT_HOME, BREAKPOINTS } from "@/constant";
-import Button from "../Button";
 import Typography from "../Typography";
 
 function HomePage() {
@@ -50,7 +51,15 @@ function HomePage() {
               Experience natural, lifelike audio and exceptional <br />
               build quality made for the passionate music <br /> enthusiast.
             </Copy>
-            <Button variant="contained">SEE PRODUCT</Button>
+            <Link
+              href={"/details/xx99-mark-ii-headphones"}
+              passHref
+              legacyBehavior
+            >
+              <Button variant="contained" forwardedAs={"a"}>
+                SEE PRODUCT
+              </Button>
+            </Link>
           </Information>
         </HeroWrapper>
       </HeroSection>
@@ -92,7 +101,11 @@ function HomePage() {
         <ZX7SpeakerSubWrapper>
           <ZX7SpeakerInformation>
             <Typography as="h4">ZX7 SPEAKER</Typography>
-            <Button variant="outlined">SEE PRODUCT</Button>
+            <Link href={"/details/zx7-speaker"} passHref legacyBehavior>
+              <Button variant="outlined" forwardedAs={"a"}>
+                SEE PRODUCT
+              </Button>
+            </Link>
           </ZX7SpeakerInformation>
         </ZX7SpeakerSubWrapper>
       </ZX7SpeakerWrapper>
@@ -116,7 +129,11 @@ function HomePage() {
         <YX1EarhphoneSubWrapper>
           <YX1EarphoneInformation>
             <Typography as="h4">YX1 EARPHONES</Typography>
-            <Button variant="outlined">SEE PRODUCT</Button>
+            <Link href={"/details/yx1-earphones"} passHref legacyBehavior>
+              <Button variant="outlined" forwardedAs={"a"}>
+                SEE PRODUCT
+              </Button>
+            </Link>
           </YX1EarphoneInformation>
         </YX1EarhphoneSubWrapper>
       </YX1EarphonesWrapper>

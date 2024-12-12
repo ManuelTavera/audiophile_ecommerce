@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import {
   Wrapper,
@@ -9,10 +10,9 @@ import {
   Subheader,
   Picture,
   Image,
+  ProductButton,
 } from "./ProductInformation.style";
 import { BREAKPOINTS } from "@/constant";
-
-import Button from "@/components/Button";
 
 function ProductInformation({
   image,
@@ -21,6 +21,7 @@ function ProductInformation({
   title,
   description,
   reverseLayout,
+  href = "/",
 }) {
   const [desktopImg, tabletImg, mobileImg] = image;
 
@@ -43,7 +44,11 @@ function ProductInformation({
         {isNewProduct && <Subheader variant="overline">NEW PRODUCT</Subheader>}
         <Header forwardedAs={"h2"}>{title}</Header>
         <Paragraph variant="body">{description}</Paragraph>
-        <Button variant="contained">SEE PRODUCT</Button>
+        <Link href={href} passHref legacyBehavior>
+          <ProductButton variant="contained" forwardedAs={"a"}>
+            SEE PRODUCT
+          </ProductButton>
+        </Link>
       </Information>
     </Wrapper>
   );

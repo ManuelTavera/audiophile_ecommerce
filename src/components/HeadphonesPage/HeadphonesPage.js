@@ -21,6 +21,7 @@ function HeadphonesPage() {
           description={`The new XX99 Mark II headphones is the pinnacle of pristine audio. It
               redefines your premium headphone experience by reproducing the
               balanced depth and precision of studio-quality sound.`}
+          href={"/details/xx99-mark-ii-headphones"}
         />
       </ProductSectionWrapper>
       <ProductSectionWrapper>
@@ -36,6 +37,7 @@ function HeadphonesPage() {
               the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, 
               mixing engineers, and music aficionados alike in studios and on the go.`}
           reverseLayout
+          href={"/details/xx99-mark-i-headphones"}
         />
       </ProductSectionWrapper>
       <ProductSectionWrapper>
@@ -51,6 +53,7 @@ function HeadphonesPage() {
               and customize it to your specific tastes with the XX59 headphones. 
               The stylish yet durable versatile wireless headset is a 
               brilliant companion at home or on the move.`}
+          href={"/details/xx59-headphones"}
         />
       </ProductSectionWrapper>
     </ProductPage>

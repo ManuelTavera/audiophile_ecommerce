@@ -2,8 +2,8 @@
 import { COLORS, MEDIA_QUERIES } from "@/constant";
 import MainWrapper from "@/components/MainWrapper";
 import Typography from "@/components/Typography";
-import Button from "@/components/Button";
 import styled from "styled-components";
+import BaseButton from "@/components/Button";
 
 export const Wrapper = styled.main`
   background-color: ${COLORS["white"]};
@@ -246,7 +246,7 @@ export const ZX9SpeakerBody = styled(Typography)`
   }
 `;
 
-export const ZX9SpeakerBtn = styled(Button)`
+export const ZX9SpeakerBtn = styled(BaseButton)`
   --backgroundColor: ${COLORS["black"]};
 
   &:hover {
@@ -358,4 +358,9 @@ export const YX1EarphoneInformation = styled.div`
 
 export const YX1Picture = styled.picture`
   height: 100%;
+`;
+
+export const Button = styled(BaseButton)`
+  text-decoration: none;
+  display: inline-flex;
 `;
