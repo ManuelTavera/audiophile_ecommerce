@@ -146,10 +146,100 @@ export const ALL_PRODUCTS = {
       },
     ],
   },
+  "xx99-mark-i-headphones": {
+    name: "XX99 Mark II Headphones",
+    description: `The new XX99 Mark II headphones is the pinnacle of pristine audio. 
+      It redefines your premium headphone experience by reproducing 
+      the balanced depth and precision of studio-quality sound.`,
+    price: 1750,
+    isNewProduct: false,
+    images: [
+      "/images/desktop/image-xx99-mark-one-headphones.jpg",
+      "/images/tablet/image-xx99-mark-one-headphones-details.jpg",
+      "/images/mobile/image-xx99-mark-one-headphones-details.jpg",
+    ],
+    inTheBox: [
+      {
+        amount: 1,
+        product: "Headphone Unit",
+      },
+      {
+        amount: 2,
+        product: "Replacement Earcups",
+      },
+      {
+        amount: 1,
+        product: "User Manual",
+      },
+      {
+        amount: 1,
+        product: "3.5mm 5m Audio Cable",
+      },
+    ],
+    features: [
+      `As the headphones all others are measured against, 
+      the XX99 Mark I demonstrates over 
+      five decades of audio expertise, 
+      redefining the critical listening experience. 
+      This pair of closed-back headphones are made of industrial, 
+      aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.`,
+      `From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, 
+      the components work together to deliver comfort and uncompromising sound. 
+      Its closed-back design delivers up to 27 dB of passive noise cancellation, 
+      reducing resonance by reflecting sound to a dedicated absorber. 
+      For connectivity, a specially tuned cable is included with a balanced gold connector.`,
+    ],
+    galleryImages: [
+      [
+        "/images/desktop/image-xx99-mark-one-gallery-1.jpg",
+        "/images/tablet/image-xx99-mark-one-gallery-1.jpg",
+        "/images/mobile/image-xx99-mark-one-gallery-1.jpg",
+      ],
+      [
+        "/images/desktop/image-xx99-mark-one-gallery-2.jpg",
+        "/images/tablet/image-xx99-mark-one-gallery-2.jpg",
+        "/images/mobile/image-xx99-mark-one-gallery-2.jpg",
+      ],
+      [
+        "/images/desktop/image-xx99-mark-one-gallery-3.jpg",
+        "/images/tablet/image-xx99-mark-one-gallery-3.jpg",
+        "/images/mobile/image-xx99-mark-one-gallery-3.jpg",
+      ],
+    ],
+    suggestedProducts: [
+      {
+        name: "XX99 MARK II",
+        images: [
+          "/images/desktop/image-xx99-mark-two-headphones-preview.jpg",
+          "/images/tablet/image-xx99-mark-two-headphones-preview.jpg",
+          "/images/mobile/image-xx99-mark-two-headphones-preview.jpg",
+        ],
+        href: "/details/xx99-mark-ii-headphones",
+      },
+      {
+        name: "XX59",
+        images: [
+          "/images/desktop/image-xx59-headphones-preview.jpg",
+          "/images/tablet/image-xx59-headphones-preview.jpg",
+          "/images/mobile/image-xx59-headphones-preview.jpg",
+        ],
+        href: "/details/xx59-headphones",
+      },
+      {
+        name: "ZX9 SPEAKER",
+        images: [
+          "/images/desktop/image-zx9-speaker-preview.jpg",
+          "/images/tablet/image-zx9-speaker-preview.jpg",
+          "/images/mobile/image-zx9-speaker-preview.jpg",
+        ],
+        href: "/details/zx9-speaker",
+      },
+    ],
+  },
 };
 
 export const DETAILS_SLUGS = [
   "xx99-mark-ii-headphones",
-  //"xx99-mark-i-headphones",
-  //"xx59-headphones",
+  "xx99-mark-i-headphones",
+  "xx59-headphones",
 ];
