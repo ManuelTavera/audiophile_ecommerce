@@ -12,7 +12,6 @@ export const metadata = {
 
 const manrope = Manrope({
   subsets: ["latin"],
-  display: "swap",
 });
 
 export default function RootLayout({ children }) {

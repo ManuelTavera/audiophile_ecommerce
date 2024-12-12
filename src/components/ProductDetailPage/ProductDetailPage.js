@@ -7,7 +7,7 @@ import ProductFeature from "./ProductFeature/ProductFeature";
 import ProductGallery from "./ProductGallery/ProductGallery";
 import ProductRecommended from "./ProductRecommended/ProductRecommended";
 
-function ProductDetailPage() {
+function ProductDetailPage({ productData }) {
   return (
     <Wrapper>
       <SubWrapper>
@@ -17,10 +17,10 @@ function ProductDetailPage() {
           </BackText>
         </Link>
       </SubWrapper>
-      <ProductAbout />
-      <ProductFeature />
-      <ProductGallery />
-      <ProductRecommended />
+      <ProductAbout productData={productData} />
+      <ProductFeature productData={productData} />
+      <ProductGallery productData={productData} />
+      <ProductRecommended productData={productData} />
     </Wrapper>
   );
 }

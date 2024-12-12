@@ -18,14 +18,9 @@ import { BREAKPOINTS } from "@/constant";
 import Button from "@/components/Button";
 import NumberSelector from "@/components/NumberSelector";
 
-const image = [
-  "/images/desktop/image-xx99-mark-two-headphones.jpg",
-  "/images/tablet/image-xx99-mark-two-headphones-details.jpg",
-  "/images/mobile/image-xx99-mark-two-headphones-details.jpg",
-];
-
-function ProductAbout() {
-  const [desktopImg, tabletImg, mobileImg] = image;
+function ProductAbout({ productData }) {
+  const { images, name, description, isNewProduct, price } = productData;
+  const [desktopImg, tabletImg, mobileImg] = images;
   const countRef = React.useRef();
 
   const handleAddToCart = () => {
@@ -48,14 +43,15 @@ function ProductAbout() {
         </Picture>
       </ImageWrapper>
       <Information>
-        <Subheader variant="overline">NEW PRODUCT</Subheader>
-        <Header forwardedAs={"h2"}>XX99 Mark II Headphones</Header>
-        <Description variant="body">
-          The new XX99 Mark II headphones is the pinnacle of pristine audio. It
-          redefines your premium headphone experience by reproducing the
-          balanced depth and precision of studio-quality sound.
-        </Description>
-        <Price forwardedAs={"h6"}>$2,999</Price>
+        {isNewProduct && <Subheader variant="overline">NEW PRODUCT</Subheader>}
+        <Header forwardedAs={"h2"}>{name}</Header>
+        <Description variant="body">{description}</Description>
+        <Price forwardedAs={"h6"}>
+          {price.toLocaleString("en-US", {
+            style: "currency",
+            currency: "USD",
+          })}
+        </Price>
         <ActionWrapper>
           <CountWrapper>
             <NumberSelector ref={countRef} />

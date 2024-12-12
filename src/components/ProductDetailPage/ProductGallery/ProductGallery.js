@@ -9,28 +9,11 @@ import {
 } from "./ProductGallery.style";
 import { BREAKPOINTS } from "@/constant";
 
-const images = {
-  one: [
-    "/images/desktop/image-xx99-mark-two-gallery-1.jpg",
-    "/images/tablet/image-xx99-mark-two-gallery-1.jpg",
-    "/images/mobile/image-xx99-mark-two-gallery-1.jpg",
-  ],
-  two: [
-    "/images/desktop/image-xx99-mark-two-gallery-2.jpg",
-    "/images/tablet/image-xx99-mark-two-gallery-2.jpg",
-    "/images/mobile/image-xx99-mark-two-gallery-2.jpg",
-  ],
-  three: [
-    "/images/desktop/image-xx99-mark-two-gallery-3.jpg",
-    "/images/tablet/image-xx99-mark-two-gallery-3.jpg",
-    "/images/mobile/image-xx99-mark-two-gallery-3.jpg",
-  ],
-};
-
-function ProductGallery() {
-  const [imgOneDesktop, imgOneTablet, imgOneMobile] = images["one"];
-  const [imgTwoDesktop, imgTwoTablet, imgTwoMobile] = images["two"];
-  const [imgThreeDesktop, imgThreeTablet, imgThreeMobile] = images["three"];
+function ProductGallery({ productData }) {
+  const { galleryImages } = productData;
+  const [imgOneDesktop, imgOneTablet, imgOneMobile] = galleryImages[0];
+  const [imgTwoDesktop, imgTwoTablet, imgTwoMobile] = galleryImages[1];
+  const [imgThreeDesktop, imgThreeTablet, imgThreeMobile] = galleryImages[2];
 
   return (
     <Wrapper>
