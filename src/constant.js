@@ -317,10 +317,94 @@ export const ALL_PRODUCTS = {
       },
     ],
   },
+  "zx9-speakers": {
+    name: "ZX9 Speaker",
+    description: `Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.`,
+    price: 4500,
+    isNewProduct: false,
+    images: [
+      "/images/desktop/zx9-speaker.jpg",
+      "/images/tablet/zx9-speaker-details.jpg",
+      "/images/mobile/zx9-speaker-details.jpg",
+    ],
+    inTheBox: [
+      {
+        amount: 2,
+        product: "Speaker Unit",
+      },
+      {
+        amount: 2,
+        product: "Speaker Cloth Panel",
+      },
+      {
+        amount: 1,
+        product: "User Manual",
+      },
+      {
+        amount: 1,
+        product: "3.5mm 10m Audio Cable",
+      },
+      {
+        amount: 1,
+        product: "10m Optical Cable",
+      },
+    ],
+    features: [
+      `Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).`,
+      `Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.`,
+    ],
+    galleryImages: [
+      [
+        "/images/desktop/image-zx9-gallery-1.jpg",
+        "/images/tablet/image-zx9-gallery-1.jpg",
+        "/images/mobile/image-zx9-gallery-1.jpg",
+      ],
+      [
+        "/images/desktop/image-zx9-gallery-2.jpg",
+        "/images/tablet/image-zx9-gallery-2.jpg",
+        "/images/mobile/image-zx9-gallery-2.jpg",
+      ],
+      [
+        "/images/desktop/image-zx9-gallery-3.jpg",
+        "/images/tablet/image-zx9-gallery-3.jpg",
+        "/images/mobile/image-zx9-gallery-3.jpg",
+      ],
+    ],
+    suggestedProducts: [
+      {
+        name: "ZX7 SPEAKER",
+        images: [
+          "/images/desktop/image-zx7-speaker-preview.jpg",
+          "/images/tablet/image-zx7-speaker-preview.jpg",
+          "/images/mobile/image-zx7-speaker-preview.jpg",
+        ],
+        href: "/details/xx99-mark-ii-headphones",
+      },
+      {
+        name: "XX99 MARK I",
+        images: [
+          "/images/desktop/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
+        ],
+        href: "/details/image-xx99-mark-one-headphones",
+      },
+      {
+        name: "XX59",
+        images: [
+          "/images/desktop/image-xx59-headphones-preview.jpg",
+          "/images/tablet/image-xx59-headphones-preview.jpg",
+          "/images/mobile/image-xx59-headphones-preview.jpg",
+        ],
+        href: "/details/xx59-headphones",
+      },
+    ],
+  },
 };
 
 export const DETAILS_SLUGS = [
   "xx99-mark-ii-headphones",
   "xx99-mark-i-headphones",
   "xx59-headphones",
+  "zx9-speakers",
 ];
