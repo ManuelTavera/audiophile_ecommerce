@@ -237,6 +237,86 @@ export const ALL_PRODUCTS = {
       },
     ],
   },
+  "xx59-headphones": {
+    name: "XX59 Headphones",
+    description: `Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. 
+    The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.`,
+    price: 899,
+    isNewProduct: false,
+    images: [
+      "/images/desktop/image-xx59-headphones.jpg",
+      "/images/tablet/image-xx59-headphones-details.jpg",
+      "/images/mobile/image-xx59-headphones-details.jpg",
+    ],
+    inTheBox: [
+      {
+        amount: 1,
+        product: "Headphone Unit",
+      },
+      {
+        amount: 2,
+        product: "Replacement Earcups",
+      },
+      {
+        amount: 1,
+        product: "User Manual",
+      },
+      {
+        amount: 1,
+        product: "3.5mm 5m Audio Cable",
+      },
+    ],
+    features: [
+      `These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos.`,
+      `More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C.`,
+    ],
+    galleryImages: [
+      [
+        "/images/desktop/image-xx59-gallery-1.jpg",
+        "/images/tablet/image-xx59-gallery-1.jpg",
+        "/images/mobile/image-xx59-gallery-1.jpg",
+      ],
+      [
+        "/images/desktop/image-xx59-gallery-2.jpg",
+        "/images/tablet/image-xx59-gallery-2.jpg",
+        "/images/mobile/image-xx59-gallery-2.jpg",
+      ],
+      [
+        "/images/desktop/image-xx59-gallery-3.jpg",
+        "/images/tablet/image-xx59-gallery-3.jpg",
+        "/images/mobile/image-xx59-gallery-3.jpg",
+      ],
+    ],
+    suggestedProducts: [
+      {
+        name: "XX99 MARK II",
+        images: [
+          "/images/desktop/image-xx99-mark-two-headphones-preview.jpg",
+          "/images/tablet/image-xx99-mark-two-headphones-preview.jpg",
+          "/images/mobile/image-xx99-mark-two-headphones-preview.jpg",
+        ],
+        href: "/details/xx99-mark-ii-headphones",
+      },
+      {
+        name: "XX99 MARK I",
+        images: [
+          "/images/desktop/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
+        ],
+        href: "/details/image-xx99-mark-one-headphones",
+      },
+      {
+        name: "ZX9 SPEAKER",
+        images: [
+          "/images/desktop/image-zx9-speaker-preview.jpg",
+          "/images/tablet/image-zx9-speaker-preview.jpg",
+          "/images/mobile/image-zx9-speaker-preview.jpg",
+        ],
+        href: "/details/zx9-speaker",
+      },
+    ],
+  },
 };
 
 export const DETAILS_SLUGS = [
