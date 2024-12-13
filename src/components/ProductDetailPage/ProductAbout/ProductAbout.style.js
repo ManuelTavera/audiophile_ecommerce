@@ -11,11 +11,13 @@ export const Wrapper = styled(MainWrapper)`
 
   ${MEDIA_QUERIES["tablet"]} {
     gap: 69px;
+    margin-bottom: 120px;
   }
 
   ${MEDIA_QUERIES["mobile"]} {
     flex-direction: column;
     gap: 32px;
+    margin-bottom: 88px;
   }
 `;
 

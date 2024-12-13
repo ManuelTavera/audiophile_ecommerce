@@ -142,7 +142,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-zx9-speaker-preview.jpg",
           "/images/mobile/image-zx9-speaker-preview.jpg",
         ],
-        href: "/details/zx9-speaker",
+        href: "/details/zx9-speakers",
       },
     ],
   },
@@ -304,7 +304,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
           "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
         ],
-        href: "/details/image-xx99-mark-one-headphones",
+        href: "/details/image-xx99-mark-i-headphones",
       },
       {
         name: "ZX9 SPEAKER",
@@ -378,7 +378,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-zx7-speaker-preview.jpg",
           "/images/mobile/image-zx7-speaker-preview.jpg",
         ],
-        href: "/details/xx99-mark-ii-headphones",
+        href: "/details/zx7-speakers",
       },
       {
         name: "XX99 MARK I",
@@ -387,7 +387,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
           "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
         ],
-        href: "/details/image-xx99-mark-one-headphones",
+        href: "/details/image-xx99-mark-i-headphones",
       },
       {
         name: "XX59",
@@ -400,6 +400,172 @@ export const ALL_PRODUCTS = {
       },
     ],
   },
+  "zx7-speakers": {
+    name: "ZX7 Speaker",
+    description: `Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.`,
+    price: 3500,
+    isNewProduct: false,
+    images: [
+      "/images/desktop/zx7-speaker.jpg",
+      "/images/tablet/zx7-speaker-details.jpg",
+      "/images/mobile/zx7-speaker-details.jpg",
+    ],
+    inTheBox: [
+      {
+        amount: 2,
+        product: "Speaker Unit",
+      },
+      {
+        amount: 2,
+        product: "Speaker Cloth Panel",
+      },
+      {
+        amount: 1,
+        product: "User Manual",
+      },
+      {
+        amount: 1,
+        product: "3.5mm 10m Audio Cable",
+      },
+      {
+        amount: 1,
+        product: "7.5m Optical Cable",
+      },
+    ],
+    features: [
+      `Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage.`,
+      `The ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience.`,
+    ],
+    galleryImages: [
+      [
+        "/images/desktop/image-zx7-gallery-1.jpg",
+        "/images/tablet/image-zx7-gallery-1.jpg",
+        "/images/mobile/image-zx7-gallery-1.jpg",
+      ],
+      [
+        "/images/desktop/image-zx7-gallery-2.jpg",
+        "/images/tablet/image-zx7-gallery-2.jpg",
+        "/images/mobile/image-zx7-gallery-2.jpg",
+      ],
+      [
+        "/images/desktop/image-zx7-gallery-3.jpg",
+        "/images/tablet/image-zx7-gallery-3.jpg",
+        "/images/mobile/image-zx7-gallery-3.jpg",
+      ],
+    ],
+    suggestedProducts: [
+      {
+        name: "ZX9 SPEAKER",
+        images: [
+          "/images/desktop/image-zx9-speaker-preview.jpg",
+          "/images/tablet/image-zx9-speaker-preview.jpg",
+          "/images/mobile/image-zx9-speaker-preview.jpg",
+        ],
+        href: "/details/zx9-speakers",
+      },
+      {
+        name: "XX99 MARK I",
+        images: [
+          "/images/desktop/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
+        ],
+        href: "/details/image-xx99-mark-i-headphones",
+      },
+      {
+        name: "XX59",
+        images: [
+          "/images/desktop/image-xx59-headphones-preview.jpg",
+          "/images/tablet/image-xx59-headphones-preview.jpg",
+          "/images/mobile/image-xx59-headphones-preview.jpg",
+        ],
+        href: "/details/xx59-headphones",
+      },
+    ],
+  },
+  "yx1-wireless-earphones": {
+    name: "YX1 WIRELESS EARPHONES",
+    description: `Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.`,
+    price: 599,
+    isNewProduct: true,
+    images: [
+      "/images/desktop/image-yx1-earphones.jpg",
+      "/images/tablet/yx1-wireless-earphones-details.jpg",
+      "/images/mobile/yx1-wireless-earphones-details.jpg",
+    ],
+    inTheBox: [
+      {
+        amount: 2,
+        product: "Earphone Unit",
+      },
+      {
+        amount: 6,
+        product: "Multi-size Earplugs",
+      },
+      {
+        amount: 1,
+        product: "User Manual",
+      },
+      {
+        amount: 1,
+        product: "USB-C Chargin Cable",
+      },
+      {
+        amount: 1,
+        product: "Travel Pouch",
+      },
+    ],
+    features: [
+      `Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.`,
+      `The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.`,
+    ],
+    galleryImages: [
+      [
+        "/images/desktop/image-yx1-gallery-1.jpg",
+        "/images/tablet/image-yx1-gallery-1.jpg",
+        "/images/mobile/image-zx7-gallery-1.jpg",
+      ],
+      [
+        "/images/desktop/image-yx1-gallery-2.jpg",
+        "/images/tablet/image-yx1-gallery-2.jpg",
+        "/images/mobile/image-yx1-gallery-2.jpg",
+      ],
+      [
+        "/images/desktop/image-yx1-gallery-3.jpg",
+        "/images/tablet/image-yx1-gallery-3.jpg",
+        "/images/mobile/image-yx1-gallery-3.jpg",
+      ],
+    ],
+    suggestedProducts: [
+      {
+        name: "XX99 MARK I",
+        images: [
+          "/images/desktop/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
+          "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
+        ],
+        href: "/details/image-xx99-mark-i-headphones",
+      },
+      {
+        name: "XX59",
+        images: [
+          "/images/desktop/image-xx59-headphones-preview.jpg",
+          "/images/tablet/image-xx59-headphones-preview.jpg",
+          "/images/mobile/image-xx59-headphones-preview.jpg",
+        ],
+        href: "/details/xx59-headphones",
+      },
+      {
+        name: "ZX9 SPEAKER",
+        images: [
+          "/images/desktop/image-zx9-speaker-preview.jpg",
+          "/images/tablet/image-zx9-speaker-preview.jpg",
+          "/images/mobile/image-zx9-speaker-preview.jpg",
+        ],
+        href: "/details/zx9-speakers",
+      },
+    ],
+  },
 };
 
 export const DETAILS_SLUGS = [
@@ -407,4 +573,6 @@ export const DETAILS_SLUGS = [
   "xx99-mark-i-headphones",
   "xx59-headphones",
   "zx9-speakers",
+  "zx7-speakers",
+  "yx1-wireless-earphones",
 ];

@@ -10,6 +10,7 @@ export const Wrapper = styled(MainWrapper)`
 
   ${MEDIA_QUERIES["tablet"]} {
     gap: 18px;
+    margin-top: 120px;
   }
 
   ${MEDIA_QUERIES["mobile"]} {
