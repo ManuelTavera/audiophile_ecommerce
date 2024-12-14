@@ -5,7 +5,7 @@ import throttle from "lodash.throttle";
 
 import { COLORS } from "@/constant";
 
-export default function () {
+export default function useBackgroundColor() {
   const pathName = usePathname();
   const [color, setColor] = React.useState(() => {
     return pathName === "/" ? COLORS["darkLight"] : COLORS["black"];

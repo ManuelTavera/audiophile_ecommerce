@@ -8,7 +8,7 @@ const NumberSelector = React.forwardRef(function ({ onChange }, ref) {
 
   React.useEffect(() => {
     onChange && onChange(count);
-  }, [count]);
+  }, [count, onChange]);
 
   const handleDecrement = () => {
     if (count <= 1) return;

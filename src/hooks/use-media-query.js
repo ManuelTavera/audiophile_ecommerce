@@ -18,7 +18,7 @@ function useMediaQuery(query) {
     return () => {
       nextMatch.removeEventListener("change", handleMatch);
     };
-  }, [query]);
+  }, [query, handleMatch]);
 
   return matches;
 }
