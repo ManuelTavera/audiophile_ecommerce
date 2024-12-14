@@ -41,8 +41,8 @@ const Content = styled(Dialog.Content)`
   animation: ${slideIn} 0.45s linear;
   display: flex;
   gap: 10px;
-  bottom: 0;
   overflow-y: auto;
+  max-height: calc(95% - var(--headerHeight));
 
   ${MEDIA_QUERIES["mobile"]} {
     flex-direction: column;
@@ -56,8 +56,9 @@ const NavigationItem = styled.div`
 `;
 
 function MobileMenu({ children }) {
+  const [open, setOpen] = React.useState(false);
   return (
-    <Wrapper>
+    <Wrapper open={open} onOpenChange={setOpen}>
       <Trigger asChild>{children}</Trigger>
       <Portal>
         <Overlay />
@@ -72,7 +73,12 @@ function MobileMenu({ children }) {
               </Dialog.Description>
             </VisuallyHidden.Root>
             {NAVIGATION_LINKS_WITHOUT_HOME.map(({ name, href, image, alt }) => (
-              <NavigationItem key={name}>
+              <NavigationItem
+                key={name}
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
                 <ProductButton
                   name={name}
                   image={image}
