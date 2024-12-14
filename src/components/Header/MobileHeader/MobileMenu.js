@@ -41,6 +41,8 @@ const Content = styled(Dialog.Content)`
   animation: ${slideIn} 0.45s linear;
   display: flex;
   gap: 10px;
+  bottom: 0;
+  overflow-y: auto;
 
   ${MEDIA_QUERIES["mobile"]} {
     flex-direction: column;
