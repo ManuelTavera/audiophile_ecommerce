@@ -93,7 +93,11 @@ function HomePage() {
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </ZX9SpeakerBody>
-            <ZX9SpeakerBtn variant="contained">SEE PRODUCT</ZX9SpeakerBtn>
+            <Link href={"/details/zx9-speakers"} passHref legacyBehavior>
+              <ZX9SpeakerBtn variant="contained" forwardedAs={"a"}>
+                SEE PRODUCT
+              </ZX9SpeakerBtn>
+            </Link>
           </ZX9SpeakerInformation>
         </ZX9SpeakerSubWrapper>
       </ZX9SpeakerWrapper>
@@ -101,7 +105,7 @@ function HomePage() {
         <ZX7SpeakerSubWrapper>
           <ZX7SpeakerInformation>
             <Typography as="h4">ZX7 SPEAKER</Typography>
-            <Link href={"/details/zx7-speaker"} passHref legacyBehavior>
+            <Link href={"/details/zx7-speakers"} passHref legacyBehavior>
               <Button variant="outlined" forwardedAs={"a"}>
                 SEE PRODUCT
               </Button>
@@ -129,7 +133,7 @@ function HomePage() {
         <YX1EarhphoneSubWrapper>
           <YX1EarphoneInformation>
             <Typography as="h4">YX1 EARPHONES</Typography>
-            <Link href={"/details/yx1-earphones"} passHref legacyBehavior>
+            <Link href={"/details/yx1-wireless-earphones"} passHref legacyBehavior>
               <Button variant="outlined" forwardedAs={"a"}>
                 SEE PRODUCT
               </Button>

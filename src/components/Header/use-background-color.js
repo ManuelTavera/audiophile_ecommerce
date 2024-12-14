@@ -20,12 +20,16 @@ export default function () {
   };
 
   React.useEffect(() => {
+    const mainTag = document.getElementsByTagName("main")[0];
+    if (!Boolean(mainTag)) {
+      return;
+    }
+
     if (pathName.includes("/details")) {
       setColor(COLORS["black"]);
       return;
     }
 
-    const mainTag = document.getElementsByTagName("main")[0];
     const firstElementInMainSection = mainTag?.firstElementChild;
     const header = document.getElementById("header");
 
@@ -33,14 +37,14 @@ export default function () {
       () =>
         handleColorChange(
           header.offsetHeight,
-          firstElementInMainSection.offsetHeight
+          firstElementInMainSection ? firstElementInMainSection.offsetHeight : 0
         ),
       100
     );
 
     handleColorChange(
       header.offsetHeight,
-      firstElementInMainSection.offsetHeight
+      firstElementInMainSection ? firstElementInMainSection.offsetHeight : 0
     );
 
     window.addEventListener("scroll", handleScrollChange);

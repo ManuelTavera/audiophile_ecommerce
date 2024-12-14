@@ -248,6 +248,8 @@ export const ZX9SpeakerBody = styled(Typography)`
 
 export const ZX9SpeakerBtn = styled(BaseButton)`
   --backgroundColor: ${COLORS["black"]};
+  display: inline-flex;
+  text-decoration: none;
 
   &:hover {
     --backgroundColor: ${COLORS["graySecondary"]};
