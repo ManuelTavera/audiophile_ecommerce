@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 
@@ -9,11 +10,28 @@ import {
   Wrapper,
 } from "./DesktopHeader.style";
 
-import { LogoWrapper, Logo, IconWrapper, Icon, Line } from "../Header.style";
+import {
+  LogoWrapper,
+  Logo,
+  IconWrapper,
+  Icon,
+  Line,
+  Badge,
+} from "../Header.style";
+import { CheckoutTheme } from "@/components/CheckoutProvider";
 
 import { NAVIGATION_LINKS } from "@/constant";
 
 function DesktopHeader() {
+  const [isClient, setIsClient] = React.useState(false);
+  const { itemsCount } = React.useContext(CheckoutTheme);
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
+
   return (
     <Wrapper as={"div"}>
       <Link href={"/"}>
@@ -36,6 +54,7 @@ function DesktopHeader() {
       </Navigation>
       <IconWrapper>
         <Icon src="/icon/icon-cart.svg" alt="Cart Icon" />
+        <Badge>{itemsCount}</Badge>
       </IconWrapper>
       <Line />
     </Wrapper>

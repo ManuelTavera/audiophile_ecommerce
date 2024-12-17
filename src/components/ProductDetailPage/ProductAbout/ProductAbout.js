@@ -17,14 +17,22 @@ import {
 import { BREAKPOINTS } from "@/constant";
 import Button from "@/components/Button";
 import NumberSelector from "@/components/NumberSelector";
+import { CheckoutTheme } from "@/components/CheckoutProvider";
 
 function ProductAbout({ productData }) {
   const { images, name, description, isNewProduct, price } = productData;
   const [desktopImg, tabletImg, mobileImg] = images;
   const countRef = React.useRef();
+  const { handleAddToCart } = React.useContext(CheckoutTheme);
 
-  const handleAddToCart = () => {
-    console.log(countRef.current.innerHTML);
+  const onSubmit = () => {
+    // console.log(countRef.current.innerHTML);
+    const item = {
+      name: name,
+      image: desktopImg,
+      amount: countRef.current.innerHTML,
+    };
+    handleAddToCart(item);
   };
 
   return (
@@ -56,7 +64,7 @@ function ProductAbout({ productData }) {
           <CountWrapper>
             <NumberSelector ref={countRef} />
           </CountWrapper>
-          <Button variant="contained" onClick={handleAddToCart}>
+          <Button variant="contained" onClick={onSubmit}>
             ADD TO CART
           </Button>
         </ActionWrapper>

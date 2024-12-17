@@ -1,5 +1,5 @@
 "use client";
-import { MEDIA_QUERIES } from "@/constant";
+import { COLORS, MEDIA_QUERIES } from "@/constant";
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
@@ -51,6 +51,22 @@ export const IconWrapper = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
+  position: relative;
 `;
 
 export const Icon = styled.img``;
+
+export const Badge = styled.span`
+  min-width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: ${COLORS["red"]};
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: ${10 / 16}rem;
+  font-weight: bold;
+  top: -10px;
+  left: 15px;
+  display: flex;
+`;

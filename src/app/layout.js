@@ -2,6 +2,7 @@ import { Manrope } from "next/font/google";
 import "./styles.css";
 
 import StyledComponentsRegistry from "@/components/StyledComponentsRegistry";
+import CheckoutProvider from "@/components/CheckoutProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -15,14 +16,17 @@ const manrope = Manrope({
 });
 
 export default function RootLayout({ children }) {
+  console.log("render root layout")
   return (
     <html lang="en">
       <body className={manrope.className}>
         <div id="__next">
           <StyledComponentsRegistry>
-            <Header />
-            {children}
-            <Footer />
+            <CheckoutProvider>
+              <Header />
+              {children}
+              <Footer />
+            </CheckoutProvider>
           </StyledComponentsRegistry>
         </div>
       </body>
