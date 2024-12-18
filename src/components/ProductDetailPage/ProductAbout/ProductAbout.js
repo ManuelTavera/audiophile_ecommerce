@@ -26,7 +26,6 @@ function ProductAbout({ productData }) {
   const { handleAddToCart } = React.useContext(CheckoutTheme);
 
   const onSubmit = () => {
-    // console.log(countRef.current.innerHTML);
     const item = {
       name: name,
       image: desktopImg,

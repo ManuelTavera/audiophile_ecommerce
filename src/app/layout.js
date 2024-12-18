@@ -16,7 +16,6 @@ const manrope = Manrope({
 });
 
 export default function RootLayout({ children }) {
-  console.log("render root layout")
   return (
     <html lang="en">
       <body className={manrope.className}>
