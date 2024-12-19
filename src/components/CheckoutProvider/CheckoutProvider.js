@@ -29,17 +29,13 @@ function CheckoutProvider({ children }) {
     [cart]
   );
 
-  const emptyCheckoutCart = () => {
-    setCart([]);
-  };
-
   return (
     <CheckoutTheme.Provider
       value={{
         cart,
         itemsCount: cart.length,
         handleAddToCart,
-        emptyCheckoutCart,
+        setCart,
       }}
     >
       {children}

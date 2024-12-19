@@ -30,11 +30,10 @@ import { CheckoutTheme } from "../CheckoutProvider";
 
 function CheckoutModal({ children }) {
   const [isOpen, setIsOpen] = React.useState(false);
-  const { cart, emptyCheckoutCart } = React.useContext(CheckoutTheme);
-  const [checkoutCart, setCheckoutCart] = React.useState(cart);
+  const { cart, setCart } = React.useContext(CheckoutTheme);
 
   const handleAmountChange = (amount, index) => {
-    let newCheckoutCart = [...checkoutCart];
+    let newCheckoutCart = [...cart];
 
     if (amount <= 0) {
       newCheckoutCart.splice(index, 1);
@@ -42,19 +41,17 @@ function CheckoutModal({ children }) {
       newCheckoutCart[index].amount = amount;
     }
 
-    console.log(newCheckoutCart)
-
-    setCheckoutCart(newCheckoutCart);
+    setCart(newCheckoutCart);
   };
 
   const handleSubmit = () => {
-    console.log(checkoutCart);
+    console.log(cart);
   };
 
   const getTotalSum = () => {
     let total = 0;
 
-    checkoutCart.forEach(({ amount, price }) => {
+    cart.forEach(({ amount, price }) => {
       total += amount * price;
     });
 
@@ -62,13 +59,9 @@ function CheckoutModal({ children }) {
   };
 
   const handleRemoveItem = () => {
-    emptyCheckoutCart();
+    setCart([]);
     setIsOpen(false);
   };
-
-  React.useEffect(() => {
-    setCheckoutCart(cart);
-  }, [cart]);
 
   return (
     <Wrapper open={isOpen} onOpenChange={setIsOpen}>
@@ -81,11 +74,11 @@ function CheckoutModal({ children }) {
               <Description>Checkout Cart Modal</Description>
             </VisuallyHidden.Root>
             <FlexRow>
-              <Title>CART ({checkoutCart.length})</Title>
+              <Title>CART ({cart.length})</Title>
               <BackButton onClick={handleRemoveItem}>Remove all</BackButton>
             </FlexRow>
             <ItemsList>
-              {checkoutCart.map(({ name, image, amount, price }, index) => (
+              {cart.map(({ name, image, amount, price }, index) => (
                 <ItemWrapper key={name}>
                   <Image src={image} />
                   <FlexColumn>
@@ -121,7 +114,7 @@ function CheckoutModal({ children }) {
             <CheckoutButton
               onClick={handleSubmit}
               variant="contained"
-              disabled={checkoutCart.length == 0}
+              disabled={cart.length == 0}
             >
               CHECKOUT
             </CheckoutButton>
