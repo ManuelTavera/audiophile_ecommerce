@@ -304,7 +304,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
           "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
         ],
-        href: "/details/image-xx99-mark-i-headphones",
+        href: "/details/xx99-mark-i-headphones",
       },
       {
         name: "ZX9 SPEAKER",
@@ -387,7 +387,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
           "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
         ],
-        href: "/details/image-xx99-mark-i-headphones",
+        href: "/details/xx99-mark-i-headphones",
       },
       {
         name: "XX59",
@@ -470,7 +470,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
           "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
         ],
-        href: "/details/image-xx99-mark-i-headphones",
+        href: "/details/xx99-mark-i-headphones",
       },
       {
         name: "XX59",
@@ -544,7 +544,7 @@ export const ALL_PRODUCTS = {
           "/images/tablet/image-xx99-mark-one-headphones-preview.jpg",
           "/images/mobile/image-xx99-mark-one-headphones-preview.jpg",
         ],
-        href: "/details/image-xx99-mark-i-headphones",
+        href: "/details/xx99-mark-i-headphones",
       },
       {
         name: "XX59",

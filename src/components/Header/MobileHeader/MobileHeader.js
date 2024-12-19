@@ -3,10 +3,13 @@ import React from "react";
 import Link from "next/link";
 
 import { Wrapper } from "./MobileHeader.style";
-import { LogoWrapper, Logo, Icon, IconWrapper, Line } from "../Header.style";
+import { LogoWrapper, Logo, Icon, IconWrapper, Line, Badge } from "../Header.style";
 import MobileMenu from "./MobileMenu";
+import CheckoutModal from "@/components/CheckoutModal";
+import { CheckoutTheme } from "@/components/CheckoutProvider";
 
 function MobileHeader() {
+  const { itemsCount } = React.useContext(CheckoutTheme);
   const mobileHeaderRef = React.useRef();
   React.useEffect(() => {
     if (mobileHeaderRef.current) {
@@ -24,9 +27,12 @@ function MobileHeader() {
       <LogoWrapper as={Link} href="/">
         <Logo src="/icon/logo.svg" alt="Logo" />
       </LogoWrapper>
-      <IconWrapper>
-        <Icon src="/icon/icon-cart.svg" alt="Cart Icon" />
-      </IconWrapper>
+      <CheckoutModal>
+        <IconWrapper>
+          <Icon src="/icon/icon-cart.svg" alt="Cart Icon" />
+          {itemsCount !== 0 && <Badge>{itemsCount}</Badge>}
+        </IconWrapper>
+      </CheckoutModal>
       <Line />
     </Wrapper>
   );

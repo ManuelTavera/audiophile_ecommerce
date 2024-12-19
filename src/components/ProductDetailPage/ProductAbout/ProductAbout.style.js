@@ -79,7 +79,7 @@ export const ActionWrapper = styled.div`
 `;
 
 export const CountWrapper = styled.div`
-  flex-basis: 120px;
+  min-width: 120px;
 `;
 
 export const Image = styled.img`

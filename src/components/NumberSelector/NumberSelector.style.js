@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const Text = styled.p`
@@ -33,5 +35,11 @@ export const ControlButton = styled.button`
   &:disabled {
     color: ${COLORS["gray"]};
     cursor: auto;
+  }
+`;
+
+export const DeleteButton = styled(ControlButton)`
+  &:hover {
+    color: ${COLORS["red"]};
   }
 `;

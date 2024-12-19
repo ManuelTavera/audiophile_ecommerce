@@ -19,6 +19,7 @@ import {
   Badge,
 } from "../Header.style";
 import { CheckoutTheme } from "@/components/CheckoutProvider";
+import CheckoutModal from "@/components/CheckoutModal";
 
 import { NAVIGATION_LINKS } from "@/constant";
 
@@ -52,10 +53,12 @@ function DesktopHeader() {
           ))}
         </LinksWrapper>
       </Navigation>
-      <IconWrapper>
-        <Icon src="/icon/icon-cart.svg" alt="Cart Icon" />
-        <Badge>{itemsCount}</Badge>
-      </IconWrapper>
+      <CheckoutModal>
+        <IconWrapper>
+          <Icon src="/icon/icon-cart.svg" alt="Cart Icon" />
+          {itemsCount !== 0 && <Badge>{itemsCount}</Badge>}
+        </IconWrapper>
+      </CheckoutModal>
       <Line />
     </Wrapper>
   );

@@ -18,6 +18,7 @@ import { BREAKPOINTS } from "@/constant";
 import Button from "@/components/Button";
 import NumberSelector from "@/components/NumberSelector";
 import { CheckoutTheme } from "@/components/CheckoutProvider";
+import CheckoutModal from "@/components/CheckoutModal";
 
 function ProductAbout({ productData }) {
   const { images, name, description, isNewProduct, price } = productData;
@@ -29,7 +30,8 @@ function ProductAbout({ productData }) {
     const item = {
       name: name,
       image: desktopImg,
-      amount: countRef.current.innerHTML,
+      amount: parseInt(countRef.current.innerHTML),
+      price: price,
     };
     handleAddToCart(item);
   };
@@ -57,15 +59,18 @@ function ProductAbout({ productData }) {
           {price.toLocaleString("en-US", {
             style: "currency",
             currency: "USD",
+            minimumFractionDigits: 0
           })}
         </Price>
         <ActionWrapper>
           <CountWrapper>
             <NumberSelector ref={countRef} />
           </CountWrapper>
-          <Button variant="contained" onClick={onSubmit}>
-            ADD TO CART
-          </Button>
+          <CheckoutModal>
+            <Button variant="contained" onClick={onSubmit}>
+              ADD TO CART
+            </Button>
+          </CheckoutModal>
         </ActionWrapper>
       </Information>
     </Wrapper>
