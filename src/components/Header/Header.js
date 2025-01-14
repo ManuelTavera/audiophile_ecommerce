@@ -10,12 +10,18 @@ import useMediaQuery from "@/hooks/use-media-query";
 
 import useBackgroundColor from "./use-background-color";
 
+const stickyRoutes = ["/details", "/checkout"];
+
 function Header() {
   const isMobile = useMediaQuery(`(max-width: ${BREAKPOINTS["tablet"]}px)`);
   const pathName = usePathname();
   const backgroundColor = useBackgroundColor();
 
-  const position = pathName.includes("/details") ? "sticky" : "fixed";
+  let position = "fixed";
+
+  if (stickyRoutes.some((route) => pathName.includes(route))) {
+    position = "sticky";
+  }
 
   return (
     <Wrapper

@@ -36,13 +36,13 @@ export const Input = styled.input`
   }
 
   &:focus {
-    border: none;
-    outline: 1px solid ${COLORS["orange"]};
+    outline: none;
+    border: 1px solid ${COLORS["orange"]};
   }
 
   &:invalid {
-    border: none;
-    outline: 2px solid ${COLORS["red"]};
+    outline: none;
+    border: 2px solid ${COLORS["red"]};
   }
 `;
 

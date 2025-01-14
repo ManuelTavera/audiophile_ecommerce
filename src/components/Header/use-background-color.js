@@ -5,6 +5,8 @@ import throttle from "lodash.throttle";
 
 import { COLORS } from "@/constant";
 
+const stickyRoutes = ["/details", "/checkout"];
+
 export default function useBackgroundColor() {
   const pathName = usePathname();
   const [color, setColor] = React.useState(() => {
@@ -25,7 +27,7 @@ export default function useBackgroundColor() {
       return;
     }
 
-    if (pathName.includes("/details")) {
+    if (stickyRoutes.some((route) => pathName.includes(route))) {
       setColor(COLORS["black"]);
       return;
     }
