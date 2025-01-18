@@ -83,7 +83,7 @@ function CheckoutModal({ children }) {
             <ItemsList>
               {cart.map(({ name, image, amount, price }, index) => (
                 <ItemWrapper key={name}>
-                  <Image src={image} />
+                  <Image src={image} alt={name} />
                   <FlexColumn>
                     <Name variant="body">{name}</Name>
                     <Price variant="body">

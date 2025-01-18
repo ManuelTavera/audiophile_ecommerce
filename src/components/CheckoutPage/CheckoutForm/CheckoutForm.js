@@ -142,9 +142,9 @@ function CheckoutForm({ errors, register, watch }) {
         <CashRow>
           <IconCash />
           <CashText variant="body">
-            The "Cash on Delivery" option enables you to pay in cash when our
-            delivery courier arrives at your residence. Just make sure your
-            address is correct so that your order will not be cancelled.
+            The &ldquo;Cash on Delivery&rdquo; option enables you to pay in cash
+            when our delivery courier arrives at your residence. Just make sure
+            your address is correct so that your order will not be cancelled.
           </CashText>
         </CashRow>
       )}

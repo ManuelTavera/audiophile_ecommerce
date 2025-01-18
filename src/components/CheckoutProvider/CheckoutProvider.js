@@ -26,7 +26,7 @@ function CheckoutProvider({ children }) {
 
       setCart(nextCart);
     },
-    [cart]
+    [cart, setCart]
   );
 
   return (
