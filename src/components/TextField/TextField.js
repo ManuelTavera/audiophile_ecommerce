@@ -7,18 +7,29 @@ import {
   ErrorMessage,
   TextRow,
 } from "./TextField.style";
+import { COLORS } from "@/constant";
 
-function TextField({ label, errorMessage, ...rest }) {
+const TextField = React.forwardRef(function (
+  { label, errorMessage, ...rest },
+  ref
+) {
   const id = React.useId();
   return (
-    <Wrapper>
+    <Wrapper
+      style={{
+        "--errorColor": Boolean(errorMessage) ? COLORS["red"] : undefined,
+        "--borderSize": Boolean(errorMessage) ? "2px" : undefined,
+      }}
+    >
       <TextRow>
         <Label htmlFor={id}>{label}</Label>
         {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
       </TextRow>
-      <Input id={id} {...rest} />
+      <Input id={id} {...rest} ref={ref} />
     </Wrapper>
   );
-}
+});
+
+TextField.displayName = "TextField";
 
 export default TextField;

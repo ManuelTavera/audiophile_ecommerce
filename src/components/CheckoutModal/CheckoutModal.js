@@ -1,6 +1,7 @@
 import React from "react";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import { Description } from "@radix-ui/react-dialog";
+import { useRouter } from "next/navigation";
 
 import {
   Wrapper,
@@ -31,6 +32,7 @@ import { CheckoutTheme } from "../CheckoutProvider";
 function CheckoutModal({ children }) {
   const [isOpen, setIsOpen] = React.useState(false);
   const { cart, setCart } = React.useContext(CheckoutTheme);
+  const router = useRouter();
 
   const handleAmountChange = (amount, index) => {
     let newCheckoutCart = [...cart];
@@ -45,7 +47,8 @@ function CheckoutModal({ children }) {
   };
 
   const handleSubmit = () => {
-    console.log(cart);
+    router.push("/checkout");
+    setIsOpen(false);
   };
 
   const getTotalSum = () => {

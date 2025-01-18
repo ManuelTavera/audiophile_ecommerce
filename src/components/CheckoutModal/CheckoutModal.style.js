@@ -22,7 +22,7 @@ export const Content = styled(Dialog.Content)`
   left: 50%;
   padding-left: 24px;
   padding-right: 24px;
-  width: clamp(327px,100%,500px);
+  width: clamp(327px, 100%, 500px);
 `;
 
 export const ContentWrapper = styled.div`
