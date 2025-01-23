@@ -12,6 +12,7 @@ import {
   BackWrapper,
 } from "./CheckoutPage.style";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
+import ConfirmationModal from "../ConfirmationModal";
 
 const CheckoutSummary = dynamic(
   () => import("./CheckoutSummary/CheckoutSummary"),
@@ -74,24 +75,29 @@ function CheckoutPage() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = handleSubmit((data) => {
-    console.log(data);
+  const [isOpen, setOpen] = React.useState(false);
+
+  const onSubmit = handleSubmit(() => {
+    setOpen(true);
   });
 
   return (
-    <Wrapper>
-      <BackWrapper>
-        <Link href={"/"} passHref legacyBehavior>
-          <BackText variant="body" forwardedAs={"a"}>
-            Go Back
-          </BackText>
-        </Link>
-      </BackWrapper>
-      <SubWrapper onSubmit={onSubmit} as={"form"}>
-        <CheckoutForm errors={errors} register={register} watch={watch} />
-        <CheckoutSummary />
-      </SubWrapper>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <BackWrapper>
+          <Link href={"/"} passHref legacyBehavior>
+            <BackText variant="body" forwardedAs={"a"}>
+              Go Back
+            </BackText>
+          </Link>
+        </BackWrapper>
+        <SubWrapper onSubmit={onSubmit} as={"form"}>
+          <CheckoutForm errors={errors} register={register} watch={watch} />
+          <CheckoutSummary />
+        </SubWrapper>
+      </Wrapper>
+      <ConfirmationModal isOpen={isOpen} handleOpen={setOpen} />
+    </>
   );
 }
 

@@ -2,13 +2,7 @@ import React from "react";
 import {
   Wrapper,
   Header,
-  ItemImage,
-  ItemName,
-  ItemPrice,
-  ItemAmount,
   ItemList,
-  ItemWrapper,
-  ItemInfo,
   CheckoutText,
   Row,
   CheckoutCost,
@@ -16,27 +10,8 @@ import {
   TotalRow,
   CheckoutButton,
 } from "./CheckoutSummary.style";
-
+import CheckoutItem from "@/components/CheckoutItem";
 import { CheckoutTheme } from "@/components/CheckoutProvider";
-
-function CheckoutItem({ name, image, price, amount }) {
-  return (
-    <ItemWrapper>
-      <ItemImage alt={name} src={image} />
-      <ItemInfo>
-        <ItemName variant="body">{name}</ItemName>
-        <ItemPrice variant="body">
-          {price.toLocaleString("en-US", {
-            style: "currency",
-            currency: "USD",
-            minimumFractionDigits: 0,
-          })}
-        </ItemPrice>
-      </ItemInfo>
-      <ItemAmount variant="body">x{amount}</ItemAmount>
-    </ItemWrapper>
-  );
-}
 
 function CheckoutSummary() {
   const { cart } = React.useContext(CheckoutTheme);

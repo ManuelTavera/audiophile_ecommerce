@@ -19,33 +19,6 @@ export const Header = styled(Typography)`
   margin-bottom: 30px;
 `;
 
-export const ItemImage = styled.img`
-  height: 64px;
-  width: 64px;
-  border-radius: 8px;
-  margin-right: 16px;
-`;
-
-export const ItemName = styled(Typography)`
-  color: ${COLORS["black"]};
-  font-weight: bold;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-`;
-
-export const ItemPrice = styled(Typography)`
-  font-weight: bold;
-  color: color-mix(in hsl, ${COLORS["black"]}, transparent);
-  font-size: ${14 / 16}rem;
-`;
-
-export const ItemAmount = styled(Typography)`
-  font-weight: bold;
-  color: color-mix(in hsl, ${COLORS["black"]}, transparent);
-  margin-left: auto;
-`;
-
 export const ItemList = styled.ul`
   list-style-type: none;
   padding: 0;
@@ -53,17 +26,6 @@ export const ItemList = styled.ul`
   display: flex;
   flex-direction: column;
   margin: 32px 0px;
-`;
-
-export const ItemWrapper = styled.li`
-  display: flex;
-`;
-
-export const ItemInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 19px;
-  overflow: hidden;
 `;
 
 export const CheckoutText = styled(Typography)`
